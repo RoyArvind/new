@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Main container for the entire page */
+        .login-container {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        /* Container for login form */
+        .form-container {
+            display: flex;
+            align-items: center;
+            width: 50vw;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 20px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Styling for the profile image */
+        .profile-image-container {
+            margin-top: 20px;
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Container for user information */
+        .user-info-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container for each input field */
+        .input-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 50%;
+            margin-top: 10px;
+        }
+
+        .input-field input {
+            width: 96%;
+            padding: 6px;
+        }
+
+        .input-field:nth-child(1) {
+            font-weight: 700;
+        }
+
+        /* Container for the login button */
+        .button-container {
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            width: 50%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Container for the "Remember Me" checkbox */
+        .remember-me-container {
+            align-items: flex-start;
+            display: flex;
+            margin-top: 10px;
+            width: 50%;
+        }
+
+        /* Container for the footer links */
+        .footer-links-container {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .footer-links-container a {
+            text-decoration: none;
+        }
+
+        /* Styling for the horizontal line */
+        .horizontal-line {
+            width: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="form-container">
+            <div class="profile-image-container">
+                <div class="profile-image">Photo</div>
+            </div>
+
+            <div class="user-info-container">
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter Username">
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password">
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button>Login</button>
+                </div>
+
+                <div class="remember-me-container">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+            </div>
+            <hr class="horizontal-line"/>
+            <div class="footer-links-container">
+                <a href="#">Cancel</a>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
